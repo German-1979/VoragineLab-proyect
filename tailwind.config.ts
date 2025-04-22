@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,6 +53,30 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				voragine: {
+					50: '#f5f7fa',
+					100: '#ebeef3',
+					200: '#d8dfe9',
+					300: '#b8c7d7',
+					400: '#93a9c2',
+					500: '#6e88a9',
+					600: '#556d8c',
+					700: '#435672',
+					800: '#1a365d',  // Primary brand color
+					900: '#162e4f',
+				},
+				insight: {
+					50: '#f4f1fb',
+					100: '#e9e3f6',
+					200: '#d3c7ec',
+					300: '#b6a1de',
+					400: '#9b87f5',  // Accent color
+					500: '#7e69ab',  // Secondary brand color
+					600: '#6e59a5',
+					700: '#5a488a',
+					800: '#4c3d71',
+					900: '#41355d',
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -84,11 +109,20 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-blue': {
+					'0%, 100%': {
+						opacity: '1'
+					},
+					'50%': {
+						opacity: '0.5'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-blue': 'pulse-blue 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'
 			}
 		}
 	},
